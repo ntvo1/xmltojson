@@ -14,9 +14,14 @@ public class xmltojson {
             String json_outfile ="output/json.txt";
             String xml_outfile ="output/xml.txt";
             String xmlString1 = new getTemplate().getContent(url) ;
+            if(xmlString1.equals("error"))
+            {
+                System.out.println("Unable to hit url");
+                System.exit(1);
+            }
             JSONObject json = XML.toJSONObject(xmlString1); // converts xml to json
             String jsonPrettyPrintString = json.toString(4); // json pretty print
-            System.out.println(jsonPrettyPrintString);
+
             utility UT = new utility();
             UT.writetoFile( jsonPrettyPrintString, json_outfile);
 
