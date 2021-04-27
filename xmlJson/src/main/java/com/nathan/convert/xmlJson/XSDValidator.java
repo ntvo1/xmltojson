@@ -16,9 +16,9 @@ public class XSDValidator {
             boolean isValid = validateXMLSchema("output/addressBook.xsd","output/xml.txt");
 
             if(isValid){
-                System.out.println(" is valid against ");
+                System.out.println("  xml valid against xsd");
             } else {
-                System.out.println( " is not valid against " );
+                System.out.println( " xml is not valid against xsd" );
             }
 
     }
