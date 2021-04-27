@@ -8,7 +8,7 @@ import java.util.List;
 @XmlRootElement(name = "AddressBook")
 @XmlAccessorType(XmlAccessType.NONE)
 public class addressBook {
-    @XmlElement(name = "Contact")
+
     private List<contact> Contact;
 
     public addressBook() {
@@ -18,10 +18,10 @@ public class addressBook {
         Contact = contact;
     }
 
+    @XmlElement(name = "Contact")
     public List<contact> getContact() {
         return Contact;
     }
-
     public void setContact(List<contact> contact) {
         Contact = contact;
     }

@@ -1,35 +1,38 @@
 package com.nathan.convert.xmlJson;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
-
+@XmlAccessorType(XmlAccessType.FIELD)
 public class contact {
-    @XmlElement(name = "CompanyName")
+
     private String CompanyName;
-    @XmlElement(name = "Email")
+
     private String Email;
-    @XmlElement(name = "Address")
+
     private String Address;
-    @XmlElement(name = "Phone")
+
     private String Phone;
-    @XmlElement(name = "PostalCode")
+
     private String PostalCode;
-    @XmlElement(name = "Country")
+
     private String Country;
-    @XmlElement(name = "CustomerID")
+
     private String CustomerID;
-    @XmlElement(name = "City")
+
     private String City;
-    @XmlElement(name = "Fax")
+
     private String Fax;
-    @XmlElement(name = "ContactName")
+
     private String ContactName;
-    @XmlElement(name = "ContactTitle")
+
     private String ContactTitle;
+
 
     public String getCompanyName() {
         return CompanyName;
     }
-
     public void setCompanyName(String companyName) {
         CompanyName = companyName;
     }
@@ -37,7 +40,6 @@ public class contact {
     public String getEmail() {
         return Email;
     }
-
     public void setEmail(String email) {
         Email = email;
     }
@@ -45,7 +47,6 @@ public class contact {
     public String getAddress() {
         return Address;
     }
-
     public void setAddress(String address) {
         Address = address;
     }
